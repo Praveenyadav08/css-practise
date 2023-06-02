@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    
+    <style>
+
+      
+     
+      /* universal selector */
+
+      *{
+        background-color: blanchedalmond;
+        color: blue;
+      }
+      
+
+      /* individual selector */
+
+      h1{
+        color: red;
+        background-color: brown;
+        text-size-adjust: 16;
+      }
+      
+      /* class and id selector */
+
+.global{
+  background: #ffffff;
+}
+
+
+#dit{
+  background: pink;
+  color: aqua;
+}
+      
+      /* and selector (chained) */
+
+      p.dit.ditt{
+        background: #000;
+      }
+      
+      /* combined selector */
+
+      p,h1,ul{
+        background: #1C8D73;
+      }
+      
+      /* inside an element */
+      div ol li {
+        background: #000;
+      }
+      
+      /* direct child */
+      div>p{
+        background: darkgoldenrod;
+      }
+      
+      /* sibling  ~ or + */
+.global + h2{
+  text-size-adjust: 20;
+  color: aquamarine;
+}
+      
+    </style>
+  </head>
+  <body>
+    <div>Welcome to live class</div>
+    <span>Span is just a span, nothing more</span>
+    <p>We all know paragraph</p>
+    <ul>
+      <li class="bg-black text-white">item1</li>
+      <li >item2</li>
+      <li >item3</li>
+      <li >item4</li>
+      <li>item5</li>
+    </ul>
+
+    <div>
+      <p>lorem</p>
+      <li>awesome</li>
+      <ol>
+        <li>highlight me <a href="#">test</a></li>
+        <li>highlight me</li>
+      </ol>
+    </div>
+
+    <section>
+      <p class="sibling">Test 1</p>
+      <p >Test 2</p>
+      <p class="ditt">Test 3</p>
+      <p class="dit ditt" >Test 4</p>
+      <p>Test 5</p>
+    </section>
+
+    <h1 class="global">praveen is hero</h1>
+    <h2>romii</h2>
+    <h6>rohannnn</h6>
+  </body>
+</html>
